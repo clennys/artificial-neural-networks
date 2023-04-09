@@ -131,12 +131,12 @@ with torch.no_grad():
 torch.save(model, 'model.pt')
 
 # Load with...
-# model = MyModelDefinition(args)
-# model.load_state_dict(torch.load('load/from/path/model.pth'))
-
+# model = torch.load('load/from/path/model.pt')
 
 # Recommended, but you will need the model definition to load the state_dict. 
 #torch.save(model.state_dict(), 'save/to/path/model.pth')
 
 # Load with...
-# model = torch.load('load/from/path/model.pt')
+# model = MyModelDefinition(args)
+# model.load_state_dict(torch.load('load/from/path/model.pth'))
+
